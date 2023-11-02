@@ -61,7 +61,7 @@ function App() {
     changeTextFieldValue(e.target.value);
   };
   const handleChange =
-    (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
+    (panel: string) => (_: unknown, newExpanded: boolean) => {
       handleExpand(panel, newExpanded);
     };
 
